@@ -1,0 +1,46 @@
+/*Clearing out browser default style, here the star means all tags, so we are getting rid of extra margin, padding, and weird box stuff for all tags*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Mobile and Global First*/
+
+body {
+    color: gray;
+    font-family: arial, sans-serif;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 10px solid darkgray;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: lightslategray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: yellow;
+}
+
+/*Devices wider than phones: these are changes you want to make once the width gets wider*/
+
+@media only screen and (min-width: 481px) {
+    
+    body {
+        margin: 40px;
+        color: black;
+    }
+    
+    h1 {
+        text-align: left;
+    }
+    
+} /*end media query*/
